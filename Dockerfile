@@ -12,8 +12,8 @@ RUN set -x \
  
 RUN set -x \
     # install python 3 and plexapi
-&& apk add --no-cache python3
-&& apk add py-pip
+&& apk add --no-cache python3 \
+&& apk add py-pip \
 && pip install plexapi
 
 # Add config script.
