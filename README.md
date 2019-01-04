@@ -1,3 +1,6 @@
+DO NOT DOWNLOAD
+This is my first docker. Adapting it for Unraid to update Plex NGrok URL automatically.
+
 [![Docker repository](https://img.shields.io/docker/automated/wernight/ngrok.svg)](https://hub.docker.com/r/wernight/ngrok/) [![Build passing](https://img.shields.io/docker/build/wernight/ngrok.svg)](https://hub.docker.com/r/wernight/ngrok/) [![Codenvy badge](http://beta.codenvy.com/factory/resources/codenvy-contribute.svg)](http://beta.codenvy.com/f?url=https://github.com/wernight/docker-ngrok 'Start development on Codenvy')
 
 # Supported tags and respective `Dockerfile` links
