@@ -9,6 +9,12 @@ RUN set -x \
  && rm -f /ngrok.zip \
     # Create non-root user.
  && adduser -h /home/ngrok -D -u 6737 ngrok
+ 
+RUN set -x \
+    # install python 3 and plexapi
+&& apk add --no-cache python3
+&& apk add py-pip
+&& pip install plexapi
 
 # Add config script.
 COPY ngrok.yml /home/ngrok/.ngrok2/
