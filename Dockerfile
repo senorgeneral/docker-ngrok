@@ -15,6 +15,7 @@ RUN set -x \
 && apk add --no-cache python3 \
 && apk add py-pip \
 && pip install plexapi
+&& apk add nano
 
 # Add config script.
 COPY ngrok.yml /home/ngrok/.ngrok2/
