@@ -19,7 +19,7 @@ RUN set -x \
 # Add config script.
 COPY ngrok.yml /home/ngrok/.ngrok2/
 COPY entrypoint.sh /
-COPY plexurl.py
+COPY plexurl.py /
 
 USER ngrok
 ENV USER=ngrok
