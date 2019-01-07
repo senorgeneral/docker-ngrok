@@ -3,10 +3,10 @@
 import sys
 
 # Load user defined config
-NGROK_URL = sys.arg[1]
-PLEX_USER = sys.arg[2]
-PLEX_PWORD = sys.arg[3]
-PLEX_SERVER = sys.arg[4]
+NGROK_URL = sys.argv[1]
+PLEX_USER = sys.argv[2]
+PLEX_PWORD = sys.argv[3]
+PLEX_SERVER = sys.argv[4]
 
 from plexapi.myplex import MyPlexAccount
 account = MyPlexAccount(PLEX_USER, PLEX_PWORD)
