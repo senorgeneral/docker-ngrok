@@ -12,11 +12,15 @@ RUN set -x \
  
 RUN set -x \
     # install python 3 and plexapi
-# && apk add --no-cache python3 \
-    # && alias python=python3 \
-# && apk add py-pip \
-# && pip install plexapi \
-&& apk add nano
+ && apk add --no-cache python3 \
+ && python3 -m ensurepip \
+ && rm -r /usr/lib/python*/ensurepip \
+ && pip3 install --upgrade pip setuptools \
+ && if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi \
+ && if [[ ! -e /usr/bin/python ]]; then ln -sf /usr/bin/python3 /usr/bin/python; fi \
+ && rm -r /root/.cache \
+ && pip3 install plexapi \
+ && apk add nano
 
 # Add config script.
 COPY ngrok.yml /home/ngrok/.ngrok2/
