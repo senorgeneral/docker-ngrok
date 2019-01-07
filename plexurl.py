@@ -3,7 +3,7 @@
 import sys
 
 # Load user defined config
-NGROK_URL = sys.argv[1]
+NGROK_URL = "https://" + sys.argv[1] + ":443"
 PLEX_USER = sys.argv[2]
 PLEX_PWORD = sys.argv[3]
 PLEX_SERVER = sys.argv[4]
