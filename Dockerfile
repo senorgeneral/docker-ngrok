@@ -13,6 +13,7 @@ RUN set -x \
 RUN set -x \
     # install python 3 and plexapi
 && apk add --no-cache python3 \
+&& alias python=python3
 && apk add py-pip \
 && pip install plexapi
 && apk add nano
