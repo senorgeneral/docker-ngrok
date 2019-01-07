@@ -82,4 +82,4 @@ set -x
 exec $ARGS
 
 NGROK_URL = curl -s "$NGROK_PORT"/api/tunnels | grep -o 'https:\/\/[a-zA-Z0-9\.]\'
-python plexurl.py $NGROK_URL $PLEX_USER $PLEX_PWORD $PLEX_SERVER
+python3 plexurl.py $NGROK_URL $PLEX_USER $PLEX_PWORD $PLEX_SERVER
