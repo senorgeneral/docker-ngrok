@@ -1,9 +1,8 @@
 
 
-DO NOT DOWNLOAD
-This is my first docker. Adapting it for Unraid to update Plex NGrok URL automatically.
+This is my first docker. Adapting it for Unraid to update Plex with the random NGrok URL automatically.
 
-This docker works with Unraid and will use Ngrok to create a tunnel to an outside url and will then update the plex server. Works from behind carrier grade nat/ double nat and possibly VPN's.
+This docker works with Unraid and will use Ngrok to create a tunnel to an outside url. Then will update the plex server with the random URL. Works from behind carrier grade nat/ double nat and possibly VPN's.
 
 [![Docker repository](https://img.shields.io/docker/automated/wernight/ngrok.svg)](https://hub.docker.com/r/wernight/ngrok/) [![Build passing](https://img.shields.io/docker/build/wernight/ngrok.svg)](https://hub.docker.com/r/wernight/ngrok/) [![Codenvy badge](http://beta.codenvy.com/factory/resources/codenvy-contribute.svg)](http://beta.codenvy.com/f?url=https://github.com/wernight/docker-ngrok 'Start development on Codenvy')
 
