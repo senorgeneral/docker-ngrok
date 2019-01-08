@@ -3,7 +3,9 @@
 import sys
 import json
 import requests
-
+import time
+# need time for ngrok to start up before requesting data
+time.sleep(15)
 
 def get_ngrok_url():
     url = "http://localhost:4040/api/tunnels"
