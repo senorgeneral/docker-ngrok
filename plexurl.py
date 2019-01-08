@@ -12,7 +12,7 @@ def get_ngrok_url():
     res = requests.get(url)
     res_unicode = res.content.decode("utf-8")
     res_json = json.loads(res_unicode)
-    return res_json["tunnels"][0]["public_url"]
+    return res_json["tunnels"][1]["public_url"]
 
 # print(get_ngrok_url())
 
