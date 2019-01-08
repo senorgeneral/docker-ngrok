@@ -4,6 +4,14 @@ This is my first docker. Adapting it for Unraid to update Plex with the random N
 
 This docker works with Unraid and will use Ngrok to create a tunnel to an outside url. Then will update the plex server with the random URL. Works from behind carrier grade nat/ double nat and possibly VPN's.
 
+Variable needed are:
+ 
+NGROK_PORT = Plex IP:32400
+NGROK_AUTH = Ngrok Authtoken from their website after you've created an account
+PLEX_USER = PLex username with adminitrative rights
+PLEX_PWORD = Password for your plex user
+PLEX_SERVER = Name of the plex server. The same one listed on the left side or on plex.tv. Most likely called 'tower'
+
 [![Docker repository](https://img.shields.io/docker/automated/wernight/ngrok.svg)](https://hub.docker.com/r/wernight/ngrok/) [![Build passing](https://img.shields.io/docker/build/wernight/ngrok.svg)](https://hub.docker.com/r/wernight/ngrok/) [![Codenvy badge](http://beta.codenvy.com/factory/resources/codenvy-contribute.svg)](http://beta.codenvy.com/f?url=https://github.com/wernight/docker-ngrok 'Start development on Codenvy')
 
 # Supported tags and respective `Dockerfile` links
