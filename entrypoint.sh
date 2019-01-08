@@ -80,6 +80,4 @@ ARGS="$ARGS `echo $NGROK_PORT | sed 's|^tcp://||'`"
 
 set -x
 $ARGS
-NGROK_URL=$(curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"https:..([^"]*).*/\1/p')
-echo $NGROCK_URL
-python plexurl.py $NGROK_URL $PLEX_USER $PLEX_PWORD $PLEX_SERVER
+python plexurl.py $PLEX_USER $PLEX_PWORD $PLEX_SERVER
