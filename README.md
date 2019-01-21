@@ -8,8 +8,9 @@ Variable needed are:
 
 Open a port for 4040 in the Unraid ngrok docker interface
 
-# the port should always be 32400. The IP is what ever your plex server ip is. Most likely the same as your Unraid ip.
-NGROK_PORT = Plex_IP:32400 
+NGROK_PORT = Plex_IP:32400
+(the port should always be 32400. The IP is what ever your plex server IP is. Most likely the same as your Unraid IP. 
+Example 192.168.1.20:32400)
 
 NGROK_AUTH = Ngrok Authtoken from their website after you've created an account
 
