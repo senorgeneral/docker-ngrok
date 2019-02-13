@@ -6,7 +6,7 @@ This docker will use Ngrok to create a tunnel between your internal plex server 
 
 Variable needed are:
 
-Open a port for 4040 in the Unraid ngrok docker interface
+Open TCP port 4040 in the Unraid ngrok docker web interface
 
 NGROK_PORT = Plex_IP:32400
 the port should always be 32400. The IP is what ever your plex server IP is. Most likely the same as your Unraid IP. 
