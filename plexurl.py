@@ -8,7 +8,7 @@ import time
 # need time for ngrok to start up before requesting data
 time.sleep(15)
 
-# outputs the Ngrok https url
+# acquires the Ngrok https url
 def get_ngrok_url():
     url = "http://localhost:4040/api/tunnels"
     res = requests.get(url)
@@ -19,7 +19,7 @@ def get_ngrok_url():
           return i['public_url']
           break
 
-# Load user defined config
+# Load user defined config"
 NGROK_URL = get_ngrok_url()
 PLEX_USER = sys.argv[1]
 PLEX_PWORD = sys.argv[2]
@@ -33,7 +33,7 @@ plex = account.resource(PLEX_SERVER).connect()  # returns a PlexServer instance
 # displays current plex custom url settings. Not needed but nice to see
 print(plex.settings.customConnections)
 
-# sets new custom plex url with one from Ngrok  
+# sets plex's "Custom server access URLs" with one from Ngrok  
 customUrl = plex.settings.get('customConnections')
 customUrl.set(NGROK_URL)
 plex.settings.save()
