@@ -20,7 +20,7 @@ def get_ngrok_url():
           break
 
 # Load user defined config
-NGROK_URL = get_ngrok_url() + ":443"
+NGROK_URL = get_ngrok_url()
 PLEX_USER = sys.argv[1]
 PLEX_PWORD = sys.argv[2]
 PLEX_SERVER = sys.argv[3]
