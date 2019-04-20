@@ -20,6 +20,8 @@ PLEX_PWORD = Password for your plex user
 
 PLEX_SERVER = Name of the plex server. The same one listed on the left side or on plex.tv. Most likely called 'tower'
 
+Below is the original docker info from wernight. This is a fork with a custom python script, PlexAPI and python 3 installed.
+
 [![Docker repository](https://img.shields.io/docker/automated/wernight/ngrok.svg)](https://hub.docker.com/r/wernight/ngrok/) [![Build passing](https://img.shields.io/docker/build/wernight/ngrok.svg)](https://hub.docker.com/r/wernight/ngrok/) [![Codenvy badge](http://beta.codenvy.com/factory/resources/codenvy-contribute.svg)](http://beta.codenvy.com/f?url=https://github.com/wernight/docker-ngrok 'Start development on Codenvy')
 
 # Supported tags and respective `Dockerfile` links
