@@ -34,7 +34,7 @@ RUN set -x \
  && apk add nano
 
 # Add config script.
-COPY ngrok.yml /home/ngrok/.ngrok2/
+COPY --chown=ngrok ngrok.yml /home/ngrok/.ngrok2/
 COPY entrypoint.sh /
 COPY plexurl.py /
 
