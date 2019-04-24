@@ -89,5 +89,6 @@ ARGS="$ARGS `echo $NGROK_PORT | sed 's|^tcp://||'`"
 
 set -x
 
-:silent python plexurl.py $PLEX_USER $PLEX_PWORD $PLEX_SERVER &
+
+python plexurl.py $PLEX_USER $PLEX_PWORD $PLEX_SERVER & > /dev/null
 exec $ARGS
