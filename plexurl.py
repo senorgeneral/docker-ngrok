@@ -15,7 +15,7 @@ def get_ngrok_url():
     res_unicode = res.content.decode("utf-8")
     res_json = json.loads(res_unicode)
     for i in res_json["tunnels"]:
-       if i['name'] == 'command_line':
+       if i['proto'] == 'https':
           return i['public_url']
           break
 
