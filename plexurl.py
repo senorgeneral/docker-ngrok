@@ -43,3 +43,4 @@ from plexapi.myplex import MyPlexAccount
 account = MyPlexAccount(PLEX_USER, PLEX_PWORD)
 plex = account.resource(PLEX_SERVER).connect()  # returns a PlexServer instance
 print(plex.settings.customConnections)
+
