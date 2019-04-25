@@ -37,7 +37,6 @@ RUN set -x \
 COPY --chown=ngrok ngrok.yml /home/ngrok/.ngrok2/
 COPY entrypoint.sh /
 COPY plexurl.py /
-chmod +x plexurl.py /
 
 USER ngrok
 ENV USER=ngrok
