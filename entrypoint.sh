@@ -87,6 +87,6 @@ if [ -z "$NGROK_PORT" ]; then
 fi
 ARGS="$ARGS `echo $NGROK_PORT | sed 's|^tcp://||'`"
 
-set -x
-python plexurl.py $PLEX_USER $PLEX_PWORD $PLEX_SERVER > /dev/null &
+set -x > /dev/null 
+exec python plexurl.py $PLEX_USER $PLEX_PWORD $PLEX_SERVER &
 exec $ARGS
