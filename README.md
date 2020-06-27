@@ -10,29 +10,24 @@ Open TCP port 4040 in the Unraid ngrok docker web interface
 Variable needed are:
 
 Key = NGROK_PORT
-
 Value = Plex_IP:32400
 the port should always be 32400. The IP is what ever your plex server IP is. Most likely the same as your Unraid IP. 
 Example 192.168.1.20:32400
 
 
 Key = NGROK_AUTH
-
 Value = Ngrok Authtoken from their website after you've created an account
 
 
 Key = PLEX_USER
-
 Value = Plex username with adminitrative rights
 
 
 Key = PLEX_PWORD
-
 Value = Password for your plex user
 
 
 Key = PLEX_SERVER
-
 Value = Name of the plex server. The same one listed on the left side or on plex.tv. Most likely called 'tower'
 
 Below is the original docker info from wernight. This is a fork with a custom python script, PlexAPI and python 3 installed.
