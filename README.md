@@ -16,19 +16,24 @@ Example 192.168.1.20:32400
 
 
 Key = NGROK_AUTH
+
 Value = Ngrok Authtoken from their website after you've created an account
 
 
 Key = PLEX_USER
+
 Value = Plex username with adminitrative rights
 
 
 Key = PLEX_PWORD
+
 Value = Password for your plex user
 
 
 Key = PLEX_SERVER
+
 Value = Name of the plex server. The same one listed on the left side or on plex.tv. Most likely called 'tower'
+
 
 Below is the original docker info from wernight. This is a fork with a custom python script, PlexAPI and python 3 installed.
 
