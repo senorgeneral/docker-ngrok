@@ -1,4 +1,5 @@
 
+Danny Vera is my other github account. Same codebase
 
 This is my first docker. Adapting it for Unraid to automatically update Plex with the random NGrok URL.
 
