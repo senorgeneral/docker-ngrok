@@ -140,7 +140,7 @@ Report issues/questions/feature requests on [GitHub Issues][issues].
 
 Pull requests are very welcome!
 
-[issues]:           https://github.com/wernight/docker-ngrok/issues
+[issues]:           https://github.com/senorgeneral/docker-ngrok/issues
 [docker]:           https://www.docker.io/
 [ngrok]:            https://ngrok.com/
 [ngrok-api]:        https://ngrok.com/docs#client-api
